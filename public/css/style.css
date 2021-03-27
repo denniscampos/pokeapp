@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  font-family: "Press Start 2P", cursive;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.poke-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.poke-box {
+  background: #fcccb1;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 7px rgb(170, 142, 142);
+}
+
+.poke-img img {
+  max-width: 90%;
+  padding: 10px;
+}
+
+.poke-info {
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.poke-name {
+  font-size: small;
+}
+
+.poke-type {
+  max-width: 80%;
+}
