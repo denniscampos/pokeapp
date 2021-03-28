@@ -29,8 +29,6 @@ const getPoke = async (id) => {
     const res = await fetch(URL);
     const data = await res.json();
 
-    console.log(data.types[0].type.name);
-
     pokeCard(data);
   } catch (err) {
     console.log(err);
@@ -61,18 +59,10 @@ const pokeCard = (pokemon) => {
             <span class="poke-number">#${pokeIdNumber}</span>
             <h3 class="poke-name">${pokemon.name.toUpperCase()}</h3>
             <small class="poke-type">Type:${pokeType}</small>
-          </div>
-        </div>`;
+          </div>`;
 
   pokeBox.innerHTML = pokeHTML;
   pokeContainer.appendChild(pokeBox);
-  console.log(pokemon);
 };
 
 fetchPoke();
-
-/* 
-TODO: 
-Figure out how to loop through types. 
-Add appropriate colors to types.
-*/
